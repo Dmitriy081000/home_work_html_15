@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .wrapper {
-    @apply w-full bg-gray-400 h-svh
+    @apply w-full bg-gray-400 h-svh model-m:h-full md:h-svh
 }
 
 .header {
@@ -19,11 +19,11 @@ h1 {
 }
 
 .nav__bar {
-    @apply flex w-full justify-around bg-gray-300 my-8 rounded-3xl py-3
+    @apply flex w-full justify-around bg-gray-300 sm:my-8 rounded-3xl py-3 model-m:my-2 model-l:my-4 
 }
 
 .nav__link {
-    @apply bg-slate-100 rounded-2xl px-2 py-1 hover:bg-gray-400
+    @apply bg-slate-100 rounded-2xl px-2 py-1 hover:bg-gray-400 model-m:text-xs model-l:text-sm sm:text-base
 }
 
 .hotel {
@@ -31,11 +31,11 @@ h1 {
 }
 
 .hotel__item {
-    @apply   mb-8 bg-gray-400 rounded-2xl p-2 
+    @apply   mb-8 bg-gray-400 rounded-2xl p-2 block w-5/12 sm:w-auto
 }
 
 .box {
-    @apply flex w-80 mx-auto justify-around
+    @apply flex w-80 mx-auto justify-around model-m:flex-col sm:flex-row
 }
 
 .glava {
@@ -43,5 +43,5 @@ h1 {
 }
 
 .box__item {
-    @apply w-1/3 bg-gray-300 p-3 rounded-xl flex flex-col items-center hover:bg-slate-200 hover:scale-105
+    @apply sm:w-1/3 sm:mb-0 model-m:w-full model-m:mb-4 bg-gray-300 p-3 rounded-xl flex flex-col items-center hover:bg-slate-200 hover:scale-105
 }
